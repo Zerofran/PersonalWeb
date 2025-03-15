@@ -1,0 +1,93 @@
+
+/*-----------------------------variables--------------------------------*/
+:root{
+    --claro : rgb(255, 255, 255);
+    --negro : rgb(14, 15, 15);
+    --gris : rgb(43, 44, 40);
+    --celeste-oscuro : rgb(51, 153, 137);
+    --celeste-claro : rgb(125, 226, 209);
+    --Azul-persa-medio : rgb(0, 103, 165);
+    --Blue-jeans : rgb(90, 174, 243);
+    --Sandy-Brown : rgb(243, 159, 90);
+
+    /*------------------------colores con alfa-------------------------*/
+
+    --Blue-jeans-alfa : rgba(90, 174, 243, 0.6);
+    --Azul-persa-medio-alfa: rgba(0, 103, 165, 0.6);
+    --gris-alfa : rgba(43, 44, 40, 0.6);
+    --Sandy-Brown-alfa : rgba(243, 159, 90, 0.6);
+}
+
+
+/*-----------------------------Ajustes del header--------------------------------*/
+header {
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    background-color: var(--gris);
+    z-index: 2;
+}
+
+.Foto_Container {
+	max-width: 1700px;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: left; /* acomodar a la izquierda */
+	align-items: center; /* Centra verticalmente */
+	padding: 0px 20px;
+    border: 5px, solid, black;
+
+}
+
+.Foto{
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+    margin: 10px;
+
+    background: linear-gradient(45deg, #043157, #3ea1f3, #db711a);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+
+    border-radius: 20px;
+}
+
+/* Animación de fondo */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.Foto img {
+	height: 180px;
+    margin: 5px;                        /*---Con esto se controla el borde animado de la foto---*/
+    border-radius: 20px;
+    border: 3px, solid, black;
+    
+}
+
+.nombre{
+    padding-left: 10px;
+    padding-top: 10;
+    color: var(--claro); /*color*/
+    text-align: left;
+}
+
+.descripcion{
+    padding-left: 10px;
+    color: var(--claro); /*color*/
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 70%;
+    font-size: 18px;
+}

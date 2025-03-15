@@ -1,0 +1,46 @@
+/*-----------------------------variables--------------------------------*/
+:root{
+    --claro : rgb(255, 255, 255);
+    --negro : rgb(14, 15, 15);
+    --gris : rgb(43, 44, 40);
+    --celeste-oscuro : rgb(51, 153, 137);
+    --celeste-claro : rgb(125, 226, 209);
+    --Azul-persa-medio : rgb(0, 103, 165);
+    --Blue-jeans : rgb(90, 174, 243);
+    --Sandy-Brown : rgb(243, 159, 90);
+
+    /*------------------------colores con alfa-------------------------*/
+
+    --Blue-jeans-alfa : rgba(90, 174, 243, 0.6);
+    --Azul-persa-medio-alfa: rgba(0, 103, 165, 0.6);
+    --gris-alfa : rgba(43, 44, 40, 0.6);
+    --Sandy-Brown-alfa : rgba(243, 159, 90, 0.6);
+}
+
+/*-----------------------------Ajustes Generales--------------------------------*/
+*{
+	margin: 0;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'nunito', Arial, sans-serif;
+}
+
+
+h1{
+    color: var(--negro);
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, var(--Azul-persa-medio), var(--celeste-claro));  /*color en gradiente*/
+    
+}
+
+main{
+    min-height: 200vh;
+    height: 100%;
+    padding-left: 400px;
+    padding-right: 400px;
+
+}
